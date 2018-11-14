@@ -26,13 +26,13 @@
    ```php
    // 过滤列表
    $filter = array(
-    				'path'=>array('/demoFile/filter_1',
-        	                      '/demoFile/filter_2'),
-    				'file'=>array('/demoFile/filter.php',
-   							'/demoFile/test_1/test_1_filter.php',));
+                  'path'=>array('/demoFile/filter_1','/demoFile/filter_2'),
+                  'file'=>array('/demoFile/filter.php','/demoFile/test_1/test_1_filter.php',)
+                  );
    ```
 
 3. #### 实例化cmsVerity()，并读取文件
+
    ```php
    // 读取文件
    // readFile(目录,过滤器);
@@ -43,6 +43,7 @@
    这里获取文件数据列表有两种方法，一种是调用fileList变量，一种是file()方法。
 
    <p style="color:green">【注意】不建议用fileList变量，因为这是没有被过滤器过滤的列表</p>
+   
    ```php
    // 未过滤数据
    $fileList_noFilter = $verify->fileList;
